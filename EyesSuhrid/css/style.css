@@ -1,0 +1,1318 @@
+:root{
+	--primary:#5D8EAC;
+  --lprimary:#BADEDC;
+	--dark:#262637;
+	--pure:#E1EEE0;
+	--ternary:#3B4461;
+	--light:#FFFFFF;
+	--black:#000000;
+	--grey:#F8F8F8;
+	--darkgrey:#181818;
+}
+
+body{
+	background: var(--pure);
+	font-family: 'Poppins',sans-serif;
+	overflow-x: hidden;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing:antialiased;
+
+	-webkit-box-sizing: border-box;
+      box-sizing: border-box;
+     text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html{
+	font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+header{
+	height: 5rem;
+	width: 100%;
+	background: var(--dark);
+	display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.container{
+  max-width:1152px;
+  padding:0 15px;
+  margin:0 auto;
+}
+
+section{
+  padding: 6rem 0;
+}
+
+#nav-wrap .logo{
+   background: var(--dark);
+   color: var(--pure);
+   place-items:center;
+   border-bottom: 2px solid var(--pure);
+   padding: 1%;
+   display: flex;
+}
+
+#nav-wrap .logo #logoeye{
+  padding-left: 2rem;
+  text-decoration: none;
+  display: block;
+  color: var(--pure);
+}
+#nav-wrap .logo #logoeye:hover{
+  color: var(--primary);
+}
+#nav-wrap .logo p{
+  padding: 0 0 0 2rem;
+  font-size: 0.9rem;
+  font-family: 'Redressed', cursive;
+}
+
+#nav-wrap .logo .logbtn{
+  display: flex;
+  margin-left: auto;
+}
+
+#nav-wrap .logo .logbtn button{
+  display: block;
+  font-weight: 600;
+  font-size: 1rem;
+  /*font-family: 'Josefin', cursive;*/
+  background: transparent;
+  border: 2px solid transparent;
+  /*border-right: 2px solid var(--pure);*/
+  color: var(--pure);
+  outline: none;
+  cursor: pointer;
+  transition: all .3s ease;
+  padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+}
+
+/*#nav-wrap .logo .logbtn .signup{
+  border: none;
+}*/
+
+#nav-wrap .logo .logbtn a{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--dark);
+    display: inline-block;
+    background: var(--dark);
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease;
+}
+
+#nav-wrap .logo .logbtn a:hover{
+   background: var(--dark);
+  color: var(--primary);
+}
+
+#navigation {
+  display: grid;
+  margin: auto;
+  padding-bottom: 1.5rem;
+}
+
+ul#nav .nav{
+  margin-top: 10rem;
+}
+
+ul#nav li {
+  position: relative;
+  list-style: none;
+  height: 47px;
+  display: inline-block;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 3.5rem;
+  padding-bottom: 5px;
+  margin: 0 5px;
+  font-size: 1.5rem;
+  font-weight:600;
+  color: var(--pure);
+
+}
+
+ul#nav li a {
+  text-decoration: none;
+  color: var(--pure);
+  font-size: 1.5rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+ul#nav .active {
+  background: var(--dark);
+  color: var(--primary);
+}
+
+ul#nav li a:hover {
+  background: var(--dark);
+  color: var(--primary);
+}
+
+ul#nav li.current a {
+  color: var(--primary);
+}
+
+#nav-wrap ul {
+  margin: auto;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+li {
+  line-height: 18px;
+}
+
+#nav-wrap {
+  font-size: 1.5rem;
+  width: 100%;
+  background: var(--dark);
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin: 0 auto;
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.menu-button {
+  display: none;
+  position: absolute;
+  height: 47px;
+}
+
+.menu-button a{
+  text-decoration: none;
+  color: var(--ternary);
+}
+
+#home{
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  height: 650px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(eyecover.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+#homeblog{
+
+}
+
+#homeblog .homeblog-wrap{
+  display: flex;
+  background: var(--lprimary);
+  margin-bottom: 1.5rem;
+}
+
+#homeblog .homeblog-wrap .homeblog-about{
+  padding:2rem 2rem 2rem 1rem;
+  width: 100%;
+  height: 100%;
+}
+
+#homeblog .homeblog-wrap .homeblog-about h2 a{
+  padding-bottom: 2rem;
+  color: var(--black);
+  opacity: 3.0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Josefin Sans',sans-serif;
+}
+
+#homeblog .homeblog-wrap .homeblog-about p{
+  color: var(--black);
+  opacity: 0.9;
+  font-weight: 400;
+  text-transform: none;
+  text-align: justify;
+  font-size: 1.05rem;
+  margin-top: 1rem;
+}
+
+#homeblog .homeblog-wrap .homeblog-img{
+  padding:1rem 0rem 1rem 0rem;
+  width: 40%;
+}
+
+#homeblog .homeblog-wrap .homeblog-img img{
+   
+  height: 100%;
+  width: 100%;
+  float: right;
+  clear: right;
+}
+
+#login-form
+{
+    margin-top: 2.5rem;
+    display: none;
+}
+#login-form .form-box
+{
+  width:450px;
+  height:500px;
+  position:relative;
+  margin:0 auto;
+  background:rgba(0,0,0,0.6);
+  padding:5px;
+  overflow: hidden;
+}
+#login-form .button-box
+{
+  width:220px;
+  margin:20px auto;
+  position:relative;
+  box-shadow: 0 0 20px 9px var(--dark);
+  border-radius: 70px;
+}
+#login-form .toggle-btn
+{
+  padding:10px 30px;
+  cursor:pointer;
+  background:transparent;
+  border:0;
+  outline: none;
+  color: var(--dark);
+  font-weight: 600;
+  position: relative;
+}
+#login-form #btn
+{
+  top: 0;
+  left:0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: var(--lprimary);
+  border-radius: 70px;
+  transition: .5s;
+}
+#login-form .input-group-login
+{
+  color: var(--primary);
+  top: 150px;
+  position:absolute;
+  width:80%;
+  transition:.5s;
+}
+#login-form .input-group-register
+{
+  color: var(--primary);
+  top: 120px;
+  position:absolute;
+  width:80%;
+  transition:.5s;
+}
+#login-form .input-field
+{
+  color: var(--pure);
+  font-weight: 400;
+  font-size: 1rem;
+  width: 100%;
+  padding:10px 0;
+  margin:5px 0;
+  border-left:0;
+  border-top:0;
+  border-right:0;
+  border-bottom: 1px solid var(--pure);
+  outline:none;
+  background: transparent;
+}
+#login-form .submit-btn
+{
+  font-weight: 600;
+  color: var(--dark);
+  width: 85%;
+  height: 100%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: var(--lprimary);
+  border: 0;
+  outline: none;
+  border-radius: 70px;
+}
+#login-form .check-box
+{
+  margin: 30px 10px 34px 0;
+}
+#login-form span
+{
+  color:var(--pure);
+  font-size:15px;
+  bottom:64px;
+  position:absolute;
+}
+#login
+{
+  left:50px;
+}
+#login input
+{
+  color:var(--pure);
+  font-size:15;
+}
+#register
+{
+  left:450px;
+}
+#register input
+{
+  color:var(--pure);
+  font-size: 15;
+}
+
+#home #banner a{
+   transition: 0.2s; 
+}
+
+#home .banner{
+  margin-top: 10rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--pure);
+}
+
+#home .banner-title{
+    font-size: 2.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.2;
+}
+#home .banner-title span{
+    
+    color: var(--lprimary);
+}
+
+
+#home .banner p{
+    padding: 1rem 0 2rem 0;
+    font-size: 1.5rem;
+    text-transform: lowercase;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    word-spacing: 2px;
+}
+#home .banner form{
+    background: var(--light);
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+#home .search-input{
+    
+    font-size: 1.1rem;
+    width: 100%;
+    outline: 0;
+    padding: 0.6rem 0;
+    border: none;
+}
+#home .search-input::placeholder{
+    text-transform: capitalize;
+}
+#home .search-btn{
+    width: 40px;
+    font-size: 1.1rem;
+    color: var(--dark);
+    border: none;
+    background: transparent;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* blog */
+#blog .blog{
+    padding: 4.5rem 0;
+}
+
+/*#blog .title{
+  padding-bottom: 1rem;
+  color: var(--dark);
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  border-bottom: var(--dark) solid 3px;
+}*/
+#blog .blog-content{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+
+}
+#blog .blog-item{
+  width: 100%;
+  height: 100%;
+  background: var(--light);
+}
+#blog .blog-img{
+    position: relative;
+}
+#blog .blog-img img{
+  width: 100%;
+}
+#blog .blog-img span{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: var(--dark);
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0.3rem 0.6rem;
+    cursor: pointer;
+}
+#blog .blog-img span:hover{
+   color:var(--ternary);
+}
+#blog .blog-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+#blog .blog-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+#blog .blog-text h2{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--black);
+}
+#blog .blog-text p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    padding-bottom: 1.2rem;
+    color: var(--black);
+    text-align: justify;
+}
+#blog .blog-text a{
+    font-family: var(--Roboto);
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--dark);
+    display: inline-block;
+    background: var(--dark);
+    color: #fff;
+    padding: 0.55rem 1.2rem;
+    transition: all 0.5s ease;
+}
+#blog .blog-text a:hover{
+    background: var(--primary);
+}
+
+/*team    */
+
+#team{
+  background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)),var(--ternary);
+}
+
+#team .team{
+    padding: 4.5rem 0;
+}
+
+#team .title{
+  padding-bottom: 2rem;
+  color: var(--pure);
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+#team .title h2{
+  padding-bottom: 1.2rem;
+  border-bottom: 3px solid var(--pure);
+}
+
+#team .team-content{
+    margin: 3rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+}
+#team .team-item{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  align-content: center;
+  vertical-align: middle;
+}
+#team .team-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#team .team-img img{
+  width: 80%;
+  border-radius: 50%;
+
+}
+
+#team .team-text{
+    margin: 2.2rem 0;
+    padding: 0 1rem;
+}
+#team .team-text span{
+    font-weight: 300;
+    display: block;
+    padding-bottom: 0.5rem;
+}
+#team .team-text h2{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-align: center;
+    color: var(--lprimary);
+}
+#team .team-text p{
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: var(--pure);
+    
+    text-transform: none;
+    padding-bottom: 0.5rem;
+}
+
+#team .icons {
+  margin: 0rem 0;
+}
+
+#team .icons a {
+  text-decoration: none;
+  font-size: 2rem;
+  margin: 0 0.5rem;
+  color: var(--lprimary);
+}
+
+#team .icons a:hover {
+  color: var(--dark);
+}
+
+/*contact*/
+
+#contact {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  min-height: 100vh;
+  background: var(--dark);
+}
+
+#contact .sup{
+  font-size: 1.5rem;
+  color: var(--lprimary);
+  position: relative;
+  text-transform: none;
+  display: block;
+  font-family: 'Josefin Sans',sans-serif;
+  font-weight: 500;
+}
+
+#contact .para{
+  font-size: 1.3rem;
+  margin: 1rem 0rem 5rem 0rem;
+  position: relative;
+  color: var(--lprimary);
+  text-transform: none;
+  font-style: bold;
+  font-family: 'Josefin Sans',sans-serif;
+  font-weight: 300;
+}
+
+#contact .para::after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: var(--dark);
+  height: .2rem;
+  width: 80%;
+}
+
+#contact .para:after {
+  background: var(--lprimary);
+}
+
+#contact .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 90%;
+}
+
+#contact .wrapper .info {
+  width: 20%;
+  margin-top: -4rem;
+}
+
+#contact .wrapper .info .item {
+  margin: 2rem 0;
+}
+
+#contact .wrapper .info .item h2 {
+  font-size: 1.3rem;
+  font-family: 'Josefin Sans',sans-serif;
+  color: var(--lprimary);
+  margin: 1rem 0;
+  font-weight: 300;
+}
+
+#contact .wrapper .info .item h2 i {
+  color: gold;
+  padding: 0 .5rem;
+}
+
+#contact .wrapper .info .item p {
+  font-size: 1.3rem;
+  text-transform: none;
+  color: var(--lprimary);
+  padding-left: 4rem;
+  font-family: 'Josefin Sans',sans-serif;
+}
+
+#contact .wrapper form {
+  width: 40vw;
+}
+
+#contact .wrapper form .inputBox h3 {
+  font-size: 1.3rem;
+  color: var(--lprimary);
+  font-weight: 300;
+  font-family: 'Josefin Sans',sans-serif;
+}
+
+#contact .wrapper form .inputBox input, #contact .wrapper form .inputBox textarea {
+  outline: none;
+  border: 0.2rem solid var(--lprimary);
+  background: none;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  color: var(--pure);
+  font-size: 1.3rem;
+  font-weight: medium;
+  font-family: 'Josefin Sans',sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+#contact .wrapper form .inputBox textarea {
+  resize: none;
+  padding: 1rem;
+  font-family: 'Josefin Sans',sans-serif;
+  height: 100%;
+}
+
+#contact .wrapper form input[type="submit"] {
+  outline: none;
+  border: none;
+  border-radius: 0rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin: auto;
+  height: 100%;
+  width: 30%;
+  padding: 1rem;
+  background: var(--lprimary);
+  color: var(--dark);
+  font-family: 'Josefin Sans',sans-serif;
+}
+
+
+#contact .wrapper form input[type="submit"]:hover {
+  background: gold;
+}
+
+/*about dis*/
+#aboutdisease .aboutdis{
+  margin-top: 6rem;
+  padding: 7rem;
+  color: var(--black);
+  background: var(--light);
+}
+
+#aboutdisease .aboutdis h2{
+  font-family: 'Josefin Sans', sans-serif;
+  padding-bottom: 1.3rem;
+  font-size: 1.65rem;
+  color: var(--black);
+  font-weight: 600;
+}
+
+#aboutdisease .aboutdis h3{
+  font-family: 'Josefin Sans', sans-serif;
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+  color: var(--black);
+  font-weight: 600;
+}
+
+#aboutdisease .aboutdis p{
+  padding-bottom: 2rem;
+  font-weight: 500;
+  text-transform: none;
+  opacity: 0.9;
+  color: var(--black);
+}
+
+#aboutdisease .aboutdis ul{
+  padding-bottom:2rem;
+  list-style-type: square;
+  text-transform: none;
+  opacity: 0.9;
+  color: var(--black);
+  font-weight: 500;
+}
+
+#aboutdisease .aboutdis li{
+   padding: 0.5rem;
+   margin-left: 3rem;
+   line-height: 1.7rem;
+   text-transform: none;
+    opacity: 0.9;
+  color: var(--black);
+  font-weight: 500;
+}
+
+#home .eyecareabout .title{
+  font-weight: 500;
+  text-align: center;
+  padding: 10rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#home .eyecareabout .title h1{
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: var(--lprimary);
+}
+#home .eyecareabout .title p{
+  font-size: 1.5rem;
+  text-transform: none;
+  color: var(--pure);
+  padding-bottom: 2rem;
+}
+#home .eyecareabout .title a{
+  font-size: 1.5rem;
+  color: var(--lprimary);
+}
+
+/* question form design */
+
+#question-form{
+   background: var(--light);
+   
+   margin: 2rem;
+   
+}
+
+#question-form .ques-form{
+   margin-top: 8rem;
+}
+
+#question-form .ques-form .formdesign .ques{
+   font-size: 1.3rem;
+   font-family: sans-serif;
+   color: var(--black);  
+   font-weight: 600;
+    text-transform: none;
+}
+
+#question-form .ques-form .formdesign .ans{
+  padding-left: 2rem;
+  padding-top:1rem;
+  padding-bottom: 1rem;
+}
+
+#question-form .ques-form .formdesign .ans input{
+
+  
+}
+
+#question-form .ques-form .formdesign .ans input[type=radio]{
+    cursor: pointer;
+    
+}
+
+#question-form .ques-form .formdesign .ans label{
+  font-size: 1rem;
+  color: var(--black);
+  padding: 1rem;
+  font-weight: 600;
+  text-transform: none;
+}
+
+#question-form .answer-show{
+  width: 100%;
+  text-transform: none;
+}
+
+#question-form .answer-show input[type=button]{
+  width: 30%;
+  height: 3rem;
+  color: var(--pure);
+  background: var(--dark);
+  font-size: 1.3rem;
+  font-family: 'Josefin Sans',sans-serif;
+  font-weight: 600;
+  padding: 1rem;
+  border-style: none;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+
+#question-form .answer-show input[type=button]:hover{
+  background: var(--ternary);
+  color: var(--dark);
+}
+
+#question-form #result{
+   display: none;
+   padding: 2rem;
+   width: 100%;
+   
+   /*border: 2px solid var(--dark);*/
+   margin-top: 2rem;
+   background: var(--lprimary);
+   color: var(--black);
+   font-size: 1.1rem;
+   text-align: justify;
+   font-family: sans-serif;
+   text-transform: none;
+}
+
+#question-form #advice{
+   display: none;
+   padding: 2rem;
+   width: 100%;
+   line-height: 1rem;
+   /*border: 2px solid var(--dark);*/
+   margin-top: 0rem;
+   font-size: 1.1rem;
+   background: var(--primary);
+   color: var(--black);
+   text-align: justify;
+   font-family: sans-serif;
+   text-transform: none;
+}
+
+#footer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100vw;
+  height: 100%;
+  background: var(--ternary);
+}
+
+#footer h1 {
+  margin: 1rem 0;
+  font-size: 100%;
+  color: var(--pure);
+  font-weight: 200;
+  text-transform: none;
+}
+
+#footer h1 span {
+  color: var(--primary);
+}
+
+.fa-times {
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+
+/*media query*/
+@media screen and (max-width: 1200px) {
+
+
+  #login-form .form-box
+ {
+   width:400px;
+   height:500px;
+ }
+
+  #home{
+    margin-top: 0rem;
+    width: 100%;
+  }
+
+  ul#nav {
+    margin-left: 4rem;
+    display: column;
+    margin-top: 10%;
+    width: 10%;
+    height: 25rem;
+    background: transparent;
+  }
+  
+  ul#nav li {
+    width: 10%;
+  }
+  
+  ul#nav:not(.responsive) {  
+    display: none;
+  }
+  
+  ul#nav .responsive {
+    display: block;
+  }
+  
+  ul#nav li:hover {
+    background: var(--dark);
+    color: var(--primary);
+  }
+
+  ul#nav li a{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+
+  }
+  
+  ul#nav li:hover a {
+    color: var(--primary);
+  }
+  
+  .menu-button {
+    position: fixed;
+    display: block;  
+    z-index: 100;
+    background: transparent;
+    height: 5rem;
+    padding: 4%;
+  }
+
+
+  #home .eyecareabout .title{
+  font-size: 100%;
+}
+
+#home .eyecareabout .title h1{
+  font-size: 100%;
+  margin-bottom: 2rem;
+  color: var(--lprimary);
+}
+#home .eyecareabout .title p{
+  font-size: 100%;
+  text-transform: none;
+  color: var(--pure);
+}
+
+#home .banner-title{
+    font-size: 100%;
+}
+
+#home .banner p{
+    
+    font-size: 100%;
+}
+
+#home #banner a{
+   font-size: 100%;  
+}
+
+#home .search-input{
+    font-size: 90%;
+    width: 30%;
+}
+
+#homeblog{
+   height: 100%;
+   width: 100%;
+}
+
+#homeblog .homeblog-wrap{
+   margin-left: 2%;
+   margin-right: 2%;
+}
+
+#homeblog .homeblog-wrap .homeblog-about{
+  width: 100%;
+  height: 70%;
+}
+
+#homeblog .homeblog-wrap .homeblog-about h2 a{
+  font-size: 70%;
+}
+
+#homeblog .homeblog-wrap .homeblog-about p{
+  font-size: 70%;
+}
+
+
+
+
+  #blog .container{
+    width: 100%;
+  }
+  #blog .title{
+    font-size: 100%;
+  }
+   #blog .blog-text h2{
+    font-size: 100%;
+  }
+   #blog .blog-item p{
+    font-size: 70%;
+  }
+  #blog .blog-item a{
+    font-size: 70%;
+  }
+  #blog .blog-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+  #team .title h2{
+     font-size: 100%;
+  }
+
+  #team .container{
+    width: 100%;
+  }
+  #team .team-content{
+      font-size: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+  }
+  #team .team-content .team-item .team-text h2{
+     font-size: 100%;
+  }
+  #team .team-text p{
+     font-size: 60%;
+  }
+  #team .icons a{
+     font-size: 100%;
+  }
+
+  
+
+  #aboutdisease .aboutdis{
+  margin-top: 2rem;
+  padding: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  }
+  
+#aboutdisease .aboutdis h2{
+   font-size: 100%;
+   padding-top: 2rem;
+}
+
+#aboutdisease .aboutdis h3{
+   font-size: 100%;
+   padding-top: 2rem;
+}
+
+#aboutdisease .aboutdis p{
+   font-size: 70%;
+   padding-bottom: 0.5rem;
+}
+
+#aboutdisease .aboutdis ul{
+   
+}
+
+#aboutdisease .aboutdis li{
+    padding-bottom: 0rem;
+    font-size: 70%;
+}
+
+  #contact h1{
+  font-size: 100%;
+  margin: 0.5rem;
+  }
+
+  #contact h2{
+    font-size: 100%;
+  }
+  #contact h3{
+  margin-bottom: 0.1rem;
+  margin-top: 0.3rem;
+  font-size: 100%;
+  margin: 0.5rem;
+  }
+
+
+   #contact .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  #contact .wrapper .info {
+    width: 100%;
+  }
+
+#contact .wrapper .info .item h2 {
+  font-size: 100%;
+}
+
+#contact .wrapper .info .item p {
+  font-size: 100%;
+}
+
+  #contact .wrapper form {
+    width: 100%;
+  }
+  #contact .wrapper form .inputBox h3 {
+  font-size: 100%;
+}
+
+#contact .wrapper form .inputBox input, #contact .wrapper form .inputBox textarea {
+  font-size: 100%;
+  height: 100%;
+  width: 100%;
+}
+
+#contact .wrapper form .inputBox textarea {
+  height: 100%;
+}
+
+#contact .wrapper form input[type="submit"] {
+  font-size: 100%;
+  height: 100%;
+  width: 30%;
+}
+
+#question-form{
+   margin: 2rem;
+}
+
+#question-form .ques-form{
+   margin-top: 1rem;
+}
+
+#question-form .ques-form .formdesign .ques{
+   font-size: 100%;
+}
+
+#question-form .ques-form .formdesign .ans{
+  padding-left: 1rem;
+  
+}
+
+
+#question-form .ques-form .formdesign .ans label{
+  font-size: 80%;
+}
+
+#question-form .answer-show{
+  width: 100%;
+}
+
+#question-form .answer-show input[type=button]{
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+}
+
+#question-form #result{
+   font-size: 100%;
+}
+
+#question-form #advice{
+   
+   font-size: 100%;
+}
+
+}
+
+
+
+@media (max-width: 600px){
+  
+#login-form .form-box
+{
+  width:300px;
+  height:500px;
+}
+
+
+#login-form .input-group-login
+{
+  width:70%;
+}
+#login-form .input-group-register
+{
+  width:70%; 
+}
+
+
+#login-form #login span{
+  font-size:13px;
+  bottom:64px;
+}
+#login-form span
+{
+  font-size:13px;
+  bottom:45px;
+}
+ #blog .blog-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+  }
+
+  #team .team-content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+  }
+
+  #footer{
+    font-size: 70%;
+  }
+
+  
+
+}
